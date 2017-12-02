@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script >
+        function func1() {
+            var d = new Date();
+            var o = document.getElementById("div1");
+
+            o.innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        }
+
+        function func2()
+        {
+            window.setInterval(func1,1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+
+    <input type="button" value="test" onclick="func2()">
+</body>
+</html>
