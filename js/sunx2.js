@@ -48,24 +48,7 @@ function login() {
 
     return false;
 
-    // var name = document.getElementById("username").value;
-    // var password = document.getElementById("password").value;
-    // var captcha = document.getElementById("captcha").value;
-    //
-    // console.log(name,password,captcha);
-    //
-    // if (name == "") {
-    //     alert("请输入用户名");
-    //     return;
-    // }
-    // if (password == "") {
-    //     alert("请输入密码");
-    //     return;
-    // }
-    // if (captcha == "") {
-    //     alert("请输入验证码");
-    //     return;
-    // }
+    //其他常用提交方法
     // document.forms[0].submit();
     // window.location.href = "topicdynamics.html";
 }
