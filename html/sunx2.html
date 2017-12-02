@@ -25,41 +25,47 @@
             </td>
         </tr>
 
-        <form action="#" method="get">
-            <tr>
-                <td colspan="2">
-                    <div class="group-inputs">
-
-                        <input type="text" name="name" class="input-wrapper" id="username"
-                               placeholder="手机号或邮箱"
-                               required="required"
-                               autofocus
+        <tr>
+            <td colspan="2">
+                <div class="group-inputs">
+                    <form action="#" method="get" id="userinfo" onsubmit="return login()">
+                        <input type="text" name="name"
+                               class="input-wrapper" id="username"
+                               placeholder="手机号或邮箱" required="required" autofocus
                                onfocus="usernameOnfocus()"
                                onblur="usernameOnblur()">
-                        <span class="tips" id="tips"></span>
+                        <span class="usernametips" id="usernametips"></span>
 
-                        <input type="password" name="password" class="input-wrapper border" id="password"
-                               placeholder="密码"
-                               required="required">
+                        <input type="password" name="password"
+                               class="input-wrapper border" id="password"
+                               placeholder="密码" required="required"
+                               onfocus="passwdOnfocus()"
+                               onblur="passwdOnblue()"
+                        >
+                        <span class="passwordtips" id="passwordtips"></span>
 
-                        <input type="text" name="captcha" class="input-wrapper border no-border-b" id="captcha"
-                               placeholder="验证码"
-                               required="required">
+                        <input type="text" name="captcha"
+                               class="input-wrapper border no-border-b" id="captcha"
+                               placeholder="验证码" required="required"
+                               onfocus="yzmOnfocus()"
+                               onblur="yzmwdOnblue()"
+                        >
+                        <span class="yzmtips" id="yzmtips"></span>
 
                         <img src="../images/captcha.gif" alt="验证码" class="captcha" width="100" height="38">
+                    </form>
+                </div>
+            </td>
+        </tr>
 
-                    </div>
-                </td>
-            </tr>
+        <tr>
+            <td colspan="2">
+                <!-- 点击登录按钮时，调用login函数 -->
+                <button class="sign" form="userinfo">登录</button>
+                <!--<input class="sign" type="submit" value="登录">-->
+            </td>
+        </tr>
 
-            <tr>
-                <td colspan="2">
-                    <!-- 点击登录按钮时，调用login函数 -->
-                    <!--<button class="sign" onclick="login()">登录</button>-->
-                    <input class="sign" type="submit" value="登录">
-                </td>
-            </tr>
-        </form>
 
         <tr>
             <td>

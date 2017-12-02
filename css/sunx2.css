@@ -197,9 +197,29 @@ footer{
 }
 
 /* 表单错误提示 */
-.tips {
-    color:red;
+.usernametips {
+    width: 220px;
+    color:yellow;
+    font-size: small;
     position: absolute;
-    top:12px;
-    right: -90px;
+    top:13px;
+    left: 310px;
+}
+
+.passwordtips {
+    width: 220px;
+    color:yellow;
+    font-size: small;
+    position: absolute;
+    top:60px;
+    left: 310px;
+}
+
+.yzmtips {
+    width: 220px;
+    color:yellow;
+    font-size: small;
+    position: absolute;
+    top:103px;
+    left: 310px;
 }
