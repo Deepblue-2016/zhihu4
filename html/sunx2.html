@@ -9,7 +9,6 @@
     <script src="../js/sunx2.js"></script>
 
 </head>
-<!--<body onload="init()">-->
 <body>
 <div class="form">
     <table class="main-container">
@@ -60,12 +59,15 @@
 
         <tr>
             <td colspan="2">
-                <!-- 点击登录按钮时，调用login函数 -->
-                <button class="sign" form="userinfo">登录</button>
-                <!--<input class="sign" type="submit" value="登录">-->
+                <!-- 点击登录按钮时，提交表单 -->
+                <button type="submit" class="sign" form="userinfo">登录</button>
+
+                <!--其他提交方式-->
+                <!--<input type="submit" value="登录" class="sign" >-->
+                <!--button标记不加type属性，默认提交表单-->
+                <!--<button class="sign" form="userinfo">登录</button>-->
             </td>
         </tr>
-
 
         <tr>
             <td>
